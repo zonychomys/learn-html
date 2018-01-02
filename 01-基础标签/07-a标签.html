@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--  a标签用于定义超链接, 从而实现页面之间的跳转  -->
+    <title>a标签</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <!--  a标签基本使用方法  -->
+    <a href="http://www.meilapp.com">美啦</a>
+
+
+    <!--  通过在a标签内嵌入img标签实现点击图片完成跳转  -->
+    <a href="http://www.meilapp.com">
+        <img src="http://www.meilapp.com/favicon.ico" />
+    </a>
+
+
+    <!--  target属性规定浏览器应该在何处打开链接文档  -->
+    <a href="http://www.meilapp.com" target="_self">在当前页打开美啦</a>
+    <a href="http://www.meilapp.com" target="_blank">在新标签页中打开美啦</a>
+
+
+    <!--  title属性定义鼠标悬停时显示的提示文本  -->
+    <a href="http://www.meilapp.com" title="妆载全世界的美">美啦</a>
+
+
+    <!--
+        假链接: 点击之后不会发生跳转的链接
+        意义: 用于项目开发初期, 为未确定的href提供占位
+    -->
+    <a href="#">点击跳转至页面顶部</a>
+    <a href="javascript:">点击后不执行任何操作</a>
+
+
+    <!--
+        锚点: 即命名锚记, 用于定位页面中的特定id的标签
+    -->
+    <a href="#title">跳转至标题</a>
+    <a href="#content">跳转至内容</a>
+    <h1 id="title">标题</h1>
+    <p id="content" style="height:1024px">内容</p>
+</body>
+</html>

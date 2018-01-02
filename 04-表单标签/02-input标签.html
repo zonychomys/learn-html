@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        input标签用于收集用户信息
+        根据不同的type属性值, 输入字段拥有很多种形式; 包括文本字段, 复选框, 密文, 单选按钮, 按钮等
+    -->
+    <title>input标签</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <form action="http://120.25.93.51/account/login/" method="POST">
+        <!--  明文输入框  -->
+        <input type="text" name="username" placeholder="用户名" />
+        <hr />
+
+
+        <!--  密文输入框  -->
+        <input type="password" name="password" placeholder="密码" />
+        <hr />
+
+
+        <!--
+            单选框
+            checked属性用于实现默认选中
+            注意: 各单选框name属性值必须相同才能实现互斥
+        -->
+        <input type="radio" name="gender" value="F" checked="checked" />
+        <input type="radio" name="gender" value="M" />
+        <hr />
+
+
+        <!--  多选框  -->
+        <input type="checkbox" name="hobby" value="eating" checked="checked" />
+        <input type="checkbox" name="hobby" value="running" />
+        <input type="checkbox" name="hobby" value="swimming" />
+        <hr />
+
+
+        <!--  隐藏域  -->
+        <input type="hidden" name="csrfmiddlewaretoken" value="23a32ddauity" />
+        <hr />
+
+
+        <!--  文件上传按钮  -->
+        <input type='file' name="file" />
+        <hr />
+
+
+        <!--  可点击的按钮, 用于触发事件, 如js操作  -->
+        <input type="button" value="button按钮" onclick="alert(0.0)" />
+        <hr />
+
+
+        <!--  表单提交按钮, 无需绑定事件  -->
+        <input type="submit" value="submit提交" />
+        <hr />
+
+
+        <!--  重置按钮, 用于清空表单数据  -->
+        <input type="reset" value="reset重置" />
+        <hr />
+
+
+        <!--
+            可点击的图片表单提交按钮
+            当用户单击图像时, 浏览器将以像素为单位, 将鼠标相对于图像边界的偏移量发送到服务器
+        -->
+        <input type="image" src="http://www.meilapp.com/favicon.ico" />
+    </form>
+</body>
+</html>

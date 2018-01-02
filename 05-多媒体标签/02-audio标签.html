@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        audio标签: audio标签定义音乐或其他音频流
+        audio标签的使用方法基本与video标签相同, 除了width/weight/poster属性无法使用
+    -->
+    <title>audio标签</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <!--  src: 声明音频文件的url  -->
+    <audio src="http://m10.music.126.net/20170222115832/49fcabff2c6f8d5997e3154617829e7a/ymusic/d38c/024b/38c7/1d66ccb12767357eeeb74dce92a60f47.mp3">
+    </audio>
+    <hr />
+
+    <!--  autoplay: 该属性声明音频在准备就绪后立即播放  -->
+    <audio src="http://m10.music.126.net/20170222115832/49fcabff2c6f8d5997e3154617829e7a/ymusic/d38c/024b/38c7/1d66ccb12767357eeeb74dce92a60f47.mp3"
+           autoplay="autoplay">
+    </audio>
+    <hr />
+
+
+    <!--  controls: 该属性声明向用户如播放按钮之类的显示控件  -->
+    <audio src="http://m10.music.126.net/20170222115832/49fcabff2c6f8d5997e3154617829e7a/ymusic/d38c/024b/38c7/1d66ccb12767357eeeb74dce92a60f47.mp3"
+           controls="controls">
+    </audio>
+    <hr />
+
+
+    <!--  loop: 该属性声明媒介文件完成播放后再次开始播放  -->
+    <audio src="http://m10.music.126.net/20170222115832/49fcabff2c6f8d5997e3154617829e7a/ymusic/d38c/024b/38c7/1d66ccb12767357eeeb74dce92a60f47.mp3"
+           autoplay="autoplay" loop="loop" controls="controls">
+    </audio>
+    <hr />
+
+
+    <!--  preload: 该属性定义是否在页面加载时预加载音频, 该属性与autoplay属性冲突  -->
+    <audio src="http://m10.music.126.net/20170222115832/49fcabff2c6f8d5997e3154617829e7a/ymusic/d38c/024b/38c7/1d66ccb12767357eeeb74dce92a60f47.mp3"
+           controls="controls" preload="preload">
+    </audio>
+    <hr />
+
+
+    <!--  muted: 该属性定义音频的初始音频输出应处于静音状态  -->
+    <audio src="http://m10.music.126.net/20170222115832/49fcabff2c6f8d5997e3154617829e7a/ymusic/d38c/024b/38c7/1d66ccb12767357eeeb74dce92a60f47.mp3"
+           controls="controls" muted="muted">
+    </audio>
+    <hr />
+
+    <!--
+        出于音频兼容性的考虑, audio标签支持另一种格式, 该格式能够为浏览器提供多种格式的音频供其选择自己所能够支持的进行播放
+        audio标签的所有属性对于两种形式的audio标签都是通用的
+    -->
+    <audio>
+        <source src="http://m10.music.126.net/20170222115832/49fcabff2c6f8d5997e3154617829e7a/ymusic/d38c/024b/38c7/1d66ccb12767357eeeb74dce92a60f47.mp3" type="audio/mp3"></source>
+    </audio>
+</body>
+</html>

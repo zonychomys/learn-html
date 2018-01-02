@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        select标签: select标签用于创建单选或多选下拉列表
+    -->
+    <title>select标签</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <form action="http://120.25.93.51/account/login/" method="POST">
+        <!--  option标签定义下拉列表中的一个选项 -->
+        <select name="obscene">
+            <option>大帝</option>
+            <option selected="selected">wc</option>
+            <option>fqq</option>
+        </select>
+        <hr />
+
+
+        <!--  optgroup标签定义选项组, 用于为下拉列表中的选项分类  -->
+        <select name="region">
+            <optgroup label="广州">
+                <option selected="selected">天河区</option>
+                <option>越秀区</option>
+                <option>荔湾区</option>
+            <optgroup>
+            <optgroup label="深圳">
+                <option>南山区</option>
+                <option>福田区</option>
+                <option>宝安区</option>
+            <optgroup>
+        </select>
+        <input type="submit" value="submit提交" />
+    </form>
+</body>
+</html>

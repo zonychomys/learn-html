@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        字符实体: 在HTML中某些字符是预留的, 如果希望正确地显示预留字符, 我们必须在HTML中使用字符实体
+        参考链接: http://www.w3school.com.cn/html/html_entities.asp
+    -->
+    <title>字符实体</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <!--
+        不间断空格: &nbsp;
+        由于HTML会将多个空格/回车/tab合并为一个空格, 因此当希望生成多个连续空格时需要使用字符实体
+    -->
+    <p>
+        噜    哩    哩
+    </p>
+    <p>
+        噜&nbsp;&nbsp;&nbsp;&nbsp;哩&nbsp;&nbsp;&nbsp;&nbsp;哩
+    </p>
+    <hr />
+
+
+    <!--
+        大于/小于符号: &lt; &gt;
+    -->
+    <p>
+        <div>标签
+    </p>
+    <p>
+        &lt;div&gt;标签
+    </p>
+    <hr />
+
+
+    <!--
+        版权&注册商标: &copy; &reg;
+    -->
+    <p>
+        宝宝云&copy;
+        宝宝云&reg;
+    </p>
+</body>
+</html>

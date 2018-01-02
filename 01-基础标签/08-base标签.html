@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        base标签: 用于为页面上所有链接定义href以及target属性的默认值
+        注意: 该标签仅能定义在head标签内部
+    -->
+    <title>base标签</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+
+
+    <!--  通过base标签为页面中的a标签定义默认href与target属性  -->
+    <base href="http://www.meilapp.com" target="_blank">
+</head>
+
+<body>
+    <!--  base标签中定义的默认href与target属性将会作用在a标签  -->
+    <a href="">美啦</a>
+    <a href="http://www.meilapp.com">美啦</a>
+
+
+    <!--  a标签中定义的href与target属性将会覆盖base标签中定义的默认值  -->
+    <a href="http://www.meilapp.com" target="_self">美啦</a>
+</body>
+</html>

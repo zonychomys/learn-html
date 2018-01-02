@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        label标签为input元素定义标注, 其不会向用户呈现任何特殊的效果, 而是用于为鼠标用户提供更好的交互
+        当用户选择该标签时, 浏览器就会自动将焦点转到和标签相关的表单控件上, label标签有以下两种使用方法:
+
+        1. 通过label标签的for属性为label标签与label标签标注的内容建立关联关系, label标签的for属性应当与相关元素的id属性相同
+        2. 直接通过label标签嵌套对应的标签
+    -->
+    <title>label标签</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <form action="http://120.25.93.51/account/login/" method="POST">
+        <label for="verify">
+            验证码: <input type="text" name="verify" placeholder="验证码" id="verify" />
+        </label>
+        <label>
+            验证码: <input type="text" name="verify" placeholder="验证码" />
+        </label>
+    </form>
+</body>
+</html>

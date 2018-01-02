@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        table标签: 用于定义HTML中的表格
+        table标签中的tr标签用于定于表格行, th标签定义表头, td标签定义表格单元
+    -->
+    <title>table标签</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <!--  使用table标签定义表格  -->
+    <table>
+        <tr>
+            <th>姓名</th>
+            <th>电话</th>
+        </tr>
+        <tr>
+            <td>赵力</td>
+            <td>18826454427</td>
+        </tr>
+    </table>
+    <hr />
+
+
+    <!--  border属性用于定义表格的边框宽度, 默认为0  -->
+    <table border="1px">
+        <tr>
+            <th>姓名</th>
+            <th>电话</th>
+        </tr>
+        <tr>
+            <td>赵力</td>
+            <td>18826454427</td>
+        </tr>
+    </table>
+    <hr />
+
+
+    <!--
+        通过指定背景色以及表格间空隙距离实现细线表格
+        1. 分别为table标签以及tr标签设置bgcolor属性
+        2. 为table标签设置cellspacing属性
+    -->
+    <table bgcolor="black" cellspacing="1px">
+        <tr bgcolor="white">
+            <th>姓名</th>
+            <th>电话</th>
+        </tr>
+        <tr bgcolor="white">
+            <td>赵力</td>
+            <td>18826454427</td>
+        </tr>
+    </table>
+    <hr />
+
+
+    <!--
+        caption标签用于定义表格的标题
+        caption标签需要紧跟在table标签之后
+    -->
+    <table border="1px">
+        <caption>
+            <h2>联系人</h2>
+        </caption>
+        <tr>
+            <th>姓名</th>
+            <th>电话</th>
+        </tr>
+        <tr>
+            <td>赵力</td>
+            <td>18826454427</td>
+        </tr>
+    </table>
+    <hr />
+
+
+    <!--
+        为td标签设置colspan属性, 能够在水平方向上合并单元格
+        单元格合并后需要删除多出来的单元格才能够正常显示
+    -->
+    <table border="1px" width="500px" height="200px">
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td colspan="2"></td>
+            <!-- 这里在水平方向删除了一组td标签-->
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    <hr />
+
+
+    <!--
+        为td标签设置rowspan属性, 能够在垂直方向上合并单元格
+        单元格合并后需要删除多出来的单元格才能够正常显示
+    -->
+    <table border="1px" width="500px" height="200px">
+        <tr>
+            <th></th>
+            <th></th>
+            <th></th>
+        </tr>
+        <tr>
+            <td rowspan="2"></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <!-- 这里在垂直方向删除了一组td标签-->
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

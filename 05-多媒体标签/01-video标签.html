@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!--
+        video标签: video标签用于定义视频, 比如电影片段或其他视频流
+    -->
+    <title>video标签</title>
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+</head>
+
+<body>
+    <!--  src: 声明视频文件的url  -->
+    <video src="http://200003856.vod.myqcloud.com/200003856_c07bd61e26f711e6a3357758ea8193d6.f30.mp4">
+    </video>
+    <hr />
+
+
+    <!--  autoplay: 该属性声明视频在准备就绪后立即播放  -->
+    <video src="http://200003856.vod.myqcloud.com/200003856_c07bd61e26f711e6a3357758ea8193d6.f30.mp4" autoplay="autoplay">
+    </video>
+    <hr />
+
+
+    <!--  controls: 该属性声明向用户如播放按钮之类的显示控件  -->
+    <video src="http://200003856.vod.myqcloud.com/200003856_c07bd61e26f711e6a3357758ea8193d6.f30.mp4" controls="controls">
+    </video>
+    <hr />
+
+
+    <!--  poster: 规定视频下载时显示的图像, 或者在用户点击播放按钮前显示的图像  -->
+    <video src="http://200003856.vod.myqcloud.com/200003856_c07bd61e26f711e6a3357758ea8193d6.f30.mp4" controls="controls"
+           poster="http://s.meilapp.com/resource/web/images/mobile/video_details/video_bg-b4ef2e1069.png">
+    </video>
+    <hr />
+
+
+    <!--  loop: 该属性声明媒介文件完成播放后再次开始播放, 常用与网页右下角广告视频  -->
+    <video src="http://200003856.vod.myqcloud.com/200003856_c07bd61e26f711e6a3357758ea8193d6.f30.mp4" autoplay="autoplay"
+           loop="loop">
+    </video>
+    <hr />
+
+
+    <!--  preload: 该属性定义是否在页面加载时预加载视频, 该属性与autoplay属性冲突  -->
+    <video src="http://200003856.vod.myqcloud.com/200003856_c07bd61e26f711e6a3357758ea8193d6.f30.mp4" controls="controls"
+           preload="preload">
+    </video>
+    <hr />
+
+
+    <!--  muted: 该属性定义视频的初始音频输出应处于静音状态  -->
+    <video src="http://200003856.vod.myqcloud.com/200003856_c07bd61e26f711e6a3357758ea8193d6.f30.mp4" controls="controls"
+           muted="muted">
+    </video>
+    <hr />
+
+
+    <!--  width & height: 设置视频播放器的宽度 & 高度  -->
+    <video src="http://200003856.vod.myqcloud.com/200003856_c07bd61e26f711e6a3357758ea8193d6.f30.mp4" controls="controls"
+           width="800" height="600">
+    </video>
+    <hr />
+
+
+    <!--
+        出于视频兼容性的考虑, video标签支持另一种格式, 该格式能够为浏览器提供多种格式的视频供其选择自己所能够支持的进行播放
+        video标签的所有属性对于两种形式的video标签都是通用的
+    -->
+    <video>
+        <source src="http://200003856.vod.myqcloud.com/200003856_c07bd61e26f711e6a3357758ea8193d6.f30.webm" type="video/webm"></source>
+        <source src="http://200003856.vod.myqcloud.com/200003856_c07bd61e26f711e6a3357758ea8193d6.f30.mp4" type="video/mp4"></source>
+        <source src="http://200003856.vod.myqcloud.com/200003856_c07bd61e26f711e6a3357758ea8193d6.f30.ogg" type="video/ogg"></source>
+    </video>
+</body>
+</html>
